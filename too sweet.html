@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancionero Web</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Georgia', serif; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            background-color: #f0f0f0;
+        }
+        
+        .sidebar {
+            width: 35%;
+            background-color: #c2f0c2; 
+            padding: 20px 10px;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+            border-right: 2px dashed #aaa;
+        }
+        .sidebar-btn {
+            display: block;
+            width: 100%;
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 15px 5px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 2px;
+        }
+        .sidebar-img-box {
+            border: 1px solid #333;
+            margin: 20px 0;
+            background-color: #d9b3ff; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main-content {
+            width: 65%;
+            margin-left: 35%;
+            background-color: #e6f2cc; 
+            padding: 30px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #000;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .artist-img {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .lyrics {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000;
+            margin-bottom: 30px;
+            white-space: pre-line; 
+        }
+
+        audio {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .back-btn {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 12px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 2px;
+            margin-bottom: 40px;
+        }
+        
+        footer {
+            background-color: #008000;
+            width: 100%;
+            padding: 15px;
+            color: white;
+            font-size: 12px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="index.html" class="sidebar-btn">Too Sweet</a>
+        <a href="Ivy.html" class="sidebar-btn">Ivy</a>
+        <a href="Riptide.html" class="sidebar-btn">Riptide</a>
+        <a href="Maine.html" class="sidebar-btn">Maine</a>
+        <a href="Blackbird.html" class="sidebar-btn">Blackbird</a>
+        
+        <hr style="border: 1px solid #a3c2a3; margin: 20px 0;">
+        
+        <div class="sidebar-img-box">
+            <p style="margin:0; font-weight:bold; color:white;">Pasta de Dientes</p>
+            <span style="font-size:12px; color:#fff;">Sonrisas</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        
+        <h1>Too Sweet</h1>
+        
+        <img class="artist-img" src="https://musicreviewworld.com/wp-content/uploads/2025/01/Hozier-Too-Sweet-Single-Review.png" alt="Artista">
+        
+        <div class="lyrics">
+           It can't be said I'm an early bird
+           It's ten o'clock before I say a word
+           Baby, I can never tell
+           How do you sleep so well
+           You keep tellin' me to live right
+           To go to bed before the daylight
+           But then you wake up for the sunrise
+           You know you don't gotta pretend
+           Baby, now and then
+
+           Don't you just wanna wake up, dark as a lake
+           Smellin' like a bonfire, lost in a haze?
+           If you're drunk on life, babe, I think it's great
+           But while in this world
+
+           I think I'll take my whiskey neat
+           My coffee black and my bed at three
+           You're too sweet for me
+           You're too sweet for me
+           I take my whiskey neat
+           My coffee black and my bed at three
+           You're too sweet for me
+           You're too sweet for me
+
+           I aim low
+           I aim true and the ground is where I go
+           I work late where I'm free from the phone
+           And the job gets done
+           But you worry some, I know
+           But who wants to live forever, babe?
+           You treat your mouth as if it's heaven's gate
+           The rest of you like you're the TSA
+           I wish I could go along
+           Babe, don't get me wrong
+
+           You know you're bright as the morning, as soft as the rain
+           Pretty as a vine, as sweet as a grape
+           If you can sit in a barrel, maybe I'll wait
+           Until that day
+
+           I'd rather take my whiskey neat
+           My coffee black and my bed at three
+           You're too sweet for me
+           You're too sweet for me
+           I take my whiskey neat
+           My coffee black and my bed at three
+           You're too sweet for me
+           You're too sweet for me
+
+           I take my whiskey neat
+           My coffee black and my bed at three
+           You're too sweet for me
+        </div>
+
+        <h3 style="margin-bottom: 5px;">Too Sweet</h3>
+        
+        <audio controls>
+            <source src="#" type="audio/mpeg">
+        </audio>
+        
+        <a href="#" class="back-btn">Regresar</a>
+        
+        <footer>
+            Mérida, Yucatán - Proyecto Escolar
+        </footer>
+    </div>
+
+</body>
+</html>
