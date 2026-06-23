@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancionero Web</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Georgia', serif; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            background-color: #f0f0f0;
+        }
+        
+        .sidebar {
+            width: 35%;
+            background-color: #c2f0c2; 
+            padding: 20px 10px;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+            border-right: 2px dashed #aaa;
+        }
+        .sidebar-btn {
+            display: block;
+            width: 100%;
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 15px 5px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 2px;
+        }
+        .sidebar-img-box {
+            border: 1px solid #333;
+            margin: 20px 0;
+            background-color: #d9b3ff; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main-content {
+            width: 65%;
+            margin-left: 35%;
+            background-color: #e6f2cc; 
+            padding: 30px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #000;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .artist-img {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .lyrics {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000;
+            margin-bottom: 30px;
+            white-space: pre-line; 
+        }
+
+        audio {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .back-btn {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 12px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 2px;
+            margin-bottom: 40px;
+        }
+        
+        footer {
+            background-color: #008000;
+            width: 100%;
+            padding: 15px;
+            color: white;
+            font-size: 12px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="too-sweet.html" class="sidebar-btn">Too Sweet</a>
+        <a href="ivy.html" class="sidebar-btn">Ivy</a>
+        <a href="riptide.html" class="sidebar-btn">Riptide</a>
+        <a href="maine.html" class="sidebar-btn">Maine</a>
+        <a href="blackbird.html" class="sidebar-btn">Blackbird</a>
+        
+        <hr style="border: 1px solid #a3c2a3; margin: 20px 0;">
+        
+        <div class="sidebar-img-box">
+            <p style="margin:0; font-weight:bold; color:white;">Pasta de Dientes</p>
+            <span style="font-size:12px; color:#fff;">Sonrisas</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        
+        <h1>Maine</h1>
+        
+        <img class="artist-img" src="https://m.media-amazon.com/images/I/91DugeLMVAL._AC_SX385_.jpg" alt="Artista">
+        
+        <div class="lyrics">
+          Tell me lover
+          Now that you made your change
+          Was your soul rediscovered?
+          Was your heart rearranged?
+          Are you still take your pills in the morning?
+          And did you lose that longing now?
+          For a walk through an ocean town
+          Cuz this town's just an ocean now
+
+          You don't hate the summers
+          You're just afraid of the space
+          Asking strangers for answers
+          To forget what they say
+          A boat beside a dock in the sunlight
+          Nothing but the water and the sunrise now
+          Just a lack of an open mouth
+          Cuz this town's just an ocean now
+
+          Bad
+          I miss this place, your head and your heart
+          And my dad
+          Still tells me when they're playing your songs
+          Laughing at the way
+          That you would say
+          If only baby there were cameras in the traffic lights, they'd make me a star
+          They'd make me a star
+
+          I wanna go to Maine
+          I wanna go to Maine
+
+          Bad
+          I miss this place, your head and your heart
+          And my dad
+          Still tells me when they're playing your songs
+          Laughing at the way
+          That you would say
+          If only baby there were cameras in the traffic lights, they'd make me a star
+          They'd make me a star
+
+          I wanna go to Maine
+          I wanna go to Maine
+
+          You tell me lover
+          Won't you fight a change of heart
+          Cuz we're no more than the fossils
+          On Crescent Beach State Park
+          And we used sing along to church bells on Sundays
+          And can you even hear them from the subway now?
+          And I hope that we make you proud
+          Cuz this town's just an ocean now
+                           </div>
+
+        <h3 style="margin-bottom: 5px;">Maine</h3>
+        
+        <audio controls>
+            <source src="#" type="audio/mpeg">
+        </audio>
+        
+        <a href="#" class="back-btn">Regresar</a>
+        
+        <footer>
+            Mérida, Yucatán - Proyecto Escolar
+        </footer>
+    </div>
+
+</body>
+</html>
